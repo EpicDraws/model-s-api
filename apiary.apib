@@ -66,16 +66,8 @@ Retrieve a list of your owned vehicles (includes vehicles not yet shipped!)
               }],
               "count":1
             }
-
-
-## State and Settings [/powpow]
-These resources are read-only and determine the state of the vehicle's various sub-systems.
-
-+ Parameters
-
-    + vehicle_id: `1` (number) - The id of the Vehicle.
     
-## Vehicle State [/api/1/vehicles/{vehicle_id}]
+## All State [GET /api/1/vehicles/{vehicle_id}/vehicle_data]
 This retrieves the full vehicle state.
 
 + Parameters
@@ -83,7 +75,7 @@ This retrieves the full vehicle state.
     + vehicle_id: `1` (number) - The id of the Vehicle
     
 + Response 200 (application/json)
- s
+
     + Body
     
         {
